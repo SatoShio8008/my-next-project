@@ -5,8 +5,22 @@ export default function Header() {
   return (
     <header className={styles.header}>
       <a href="/" className={styles.logolink}>
-        <Image src="/logo.svg" alt="SIMPLE" width={348} height={133} priority />
+        <Image
+          src="/logo.svg"
+          alt="SIMPLE"
+          className={styles.logo}
+          width={348}
+          height={133}
+          priority
+        />
       </a>
+      <nav>
+        <ul className={styles.items}>
+          <li>
+            <a href="/members">メンバー</a>
+          </li>
+        </ul>
+      </nav>
     </header>
   );
 }
